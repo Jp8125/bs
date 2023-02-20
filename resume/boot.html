@@ -195,7 +195,7 @@
       </tbody>
     </table>
     <h2>striped table</h2>
-    <table class="table table-striped table-hover">
+    <table class="table table-striped table-hover table-sm">
       <thead>
         <tr>
           <th scope="col">column1</th>
@@ -258,7 +258,281 @@
         </tr>
       </tbody>
     </table>
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th scope="col">column1</th>
+          <th scope="col">column2</th>
+          <th scope="col">column3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>item1</td>
+          <td>item2</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>item1</td>
+          <td>item2</td>
+        </tr>
+      </tbody>
+    </table>
+   
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">column1</th>
+          <th scope="col">column2</th>
+          <th scope="col">column3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>item1</td>
+          <td>item2</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>item1</td>
+          <td>item2</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">column1</th>
+          <th scope="col">column2</th>
+          <th scope="col">column3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>item1</td>
+          <td>item2</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>item1</td>
+          <td>item2</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Pagination</h2>
+    <nav role="navigation">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+    <nav role="navigation">
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+    <nav role="navigation">
+      <ul class="pagination justify-content-end">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+    <nav role="navigation">
+      <ul class="pagination pagination-lg">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+    <nav role="navigation">
+      <ul class="pagination pagination-sm">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+   
   </div>
+<div class="container">
+  <h1>form and inputs</h1>
+
+    <form name="employee">
+      <div class="form-group">
+        <label for="name" >Name:&nbsp;</label><input type="text" class="form-control form-control-lg" required id="name">
+      </div>
+       <div class="form-group">
+        <label for="age">age:</label><input type="number" class="form-control form-control-sm"  required id="age">
+       </div>
+      <div class=" form-check">
+        <label for="Gender "  class="form-check-label">Gender:</label>
+       <br>
+        <label for="female"  class="form-check-label">FEMALE  <input type="radio" class="form-check-input"  id="female"  name="Gender" value="FEMALE"></label>
+       <br>
+        <label for="male"  class="form-check-label">MALE <input type="radio" class="form-check-input"  id="male"  name="Gender"  value="MALE"></label>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label><input type="email" class="form-control" required  id="email">
+        <small class="form-text">pls enter email of your teams account</small>
+      </div>
+      <div class="form-group">
+        <label for="doj">Date of Joining:</label><input class="form-control"  type="date" required  id="doj">
+      </div>
+      <div class="form-group">
+        <label for="loc">Location:</label>
+        <select required class="form-control"  id="loc">
+        <option >Ahmedabad</option>
+        <option >Ghandhinagar</option>
+        <option >California</option>
+        </select>
+        <small class="form-text">pls select location</small>
+      </div>
+      <div class="form-group">
+        <label for="num">Contact no:</label><input type="tel" class="form-control"  required  id="num"><br><br>
+        <input type="submit" class="btn btn-primary"  value="submit">
+      </div>
+  
+        <div class="form-group">
+          <label for="password">password:</label>
+          <input type="password" class="form-control"  name="pass" id="password">
+        </div>
+  
+    </form>
+    <h1>inline form</h1>
+    <form class="form-inline">
+      <div class="form-group">
+        <input type="text" class="form-control " placeholder="user name">
+        <input type="password" class="form-control " placeholder="password">
+      </div>
+      <div class="form-check">
+        <label for="check" class="form-check-label">
+          <input type="checkbox" class="form-check-input" name="check" id="ck">remember me
+        </label>
+      </div>
+      <button type="submit" class="btn btn-secondary">Submit</button>
+    </form>
+    <form class="form-row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="first name">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="last name">
+        </div>
+      </div>
+    </form>
+     <h1>Alerts </h1>
+    <div class="form-group">
+      <label for="user">
+        user name
+      </label>
+      <input type="text" class="form-control is-valid" placeholder="user name">
+    </div>
+    <div class="form-group">
+      <label for="password"> 
+        password
+      </label>
+      <input type="password" id="password" class="form-control is-invalid" placeholder="password">
+    <div class="invalid-feedback">
+      not strong password
+    </div>
+    </div>
+    <div class="form-group">
+      <label for="password2"> 
+        confirm password
+      </label>
+      <input type="password" id="password2" class="form-control is-invalid" placeholder="password">
+      <div class="invalid-feedback">
+         password does not match
+      </div>
+    </div>
+</div>
+<div class="container">
+  <h1>Media objects</h1>
+  <div class="media">
+    <img class="d-flex me-3" src="./javascript.svg" alt="no image available">
+     <div class="media-body">
+      <h5 class="mt-0">Media Heading</h5>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea saepe assumenda cum magnam autem, quia maiores qui repudiandae! Mollitia commodi error quibusdam illum dolorem ullam laudantium omnis alias itaque iusto?
+     </div>
+    </div>
+    <h2>nesting of media objects</h2>
+    <div class="media">
+      <img class="d-flex me-3" src="./javascript.svg" alt="no image available">
+       <div class="media-body">
+        <h5 class="mt-0">Media Heading</h5>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea saepe assumenda cum magnam autem, quia maiores qui repudiandae! Mollitia commodi error quibusdam illum dolorem ullam laudantium omnis alias itaque iusto?
+        <div class="media">
+          <img class="d-flex me-3" src="./javascript.svg" alt="no image available">
+           <div class="media-body">
+            <h5 class="mt-0">Media Heading</h5>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea saepe assumenda cum magnam autem, quia maiores qui repudiandae! Mollitia commodi error quibusdam illum dolorem ullam laudantium omnis alias itaque iusto?
+           </div>
+          </div>
+       </div>
+      </div>
+      <h2>top align</h2>
+      <div class="media">
+        <img class="d-flex me-3 align-self-start" src="./javascript.svg" alt="no image available">
+         <div class="media-body">
+          <h5 class="mt-0">Media Heading</h5>
+         <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea saepe assumenda cum magnam autem, quia maiores qui repudiandae! Mollitia commodi error quibusdam illum dolorem ullam laudantium omnis alias itaque iusto?
+         </p>
+         </div>
+        </div>
+        <div class="media">
+          <img class="d-flex me-3 align-self-center" src="./javascript.svg" alt="no image available">
+           <div class="media-body">
+            <h5 class="mt-0">Media Heading</h5>
+           <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea saepe assumenda cum magnam autem, quia maiores qui repudiandae! Mollitia commodi error quibusdam illum dolorem ullam laudantium omnis alias itaque iusto?
+           </p>
+           </div>
+          </div>
+          <div class="media">
+            <img class="d-flex me-3 align-self-end" src="./javascript.svg" alt="no image available">
+             <div class="media-body">
+              <h5 class="mt-0">Media Heading</h5>
+             <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea saepe assumenda cum magnam autem, quia maiores qui repudiandae! Mollitia commodi error quibusdam illum dolorem ullam laudantium omnis alias itaque iusto?
+             </p>
+             </div>
+            </div>
+
+            <ul class="list-unstyled">
+              <li class="media">
+                <img class="mr-3" src="..." alt="image">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">List media object</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+              </li>
+              <li class="media my-4">
+                <img class="mr-3" src="..." alt="image">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">Listmedia object</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+              </li>
+              <li class="media">
+                <img class="mr-3" src="..." alt="image">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">List media object</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+              </li>
+            </ul>
+</div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
